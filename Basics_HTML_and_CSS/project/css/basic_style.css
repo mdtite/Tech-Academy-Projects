@@ -29,3 +29,39 @@ h1 {
     border-radius: 25%;
     cursor: pointer;
 }
+
+/* hover translate and transform effects */
+
+.container .squares:nth-child(-n+4):hover {
+    background-image: url("../images/icons/icons2.png");
+    transform: scale(.5);
+    animation-name: race;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(2.5, .2, .3, 2);
+}
+
+.squares:nth-child(1):hover {
+    background: #13b4ff;
+}
+.squares:nth-child(2):hover {
+    background: #d861af;
+}
+.squares:nth-child(3):hover {
+    background: #81205f;
+}
+.squares:nth-child(4):hover {
+    background: #77b800;
+}
+
+/* animation effect */
+
+@keyframes race {
+    0%, 100% {
+        transform: translateY(0px);
+        background-image: url:("../images/icons/icons.png")
+    }
+    50% {
+        transform: translateY(300px);
+    }
+}
