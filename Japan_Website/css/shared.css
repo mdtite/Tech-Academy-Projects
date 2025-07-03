@@ -32,7 +32,7 @@ h1{
 	font-size: 30px;
 	text-transform: uppercase;
 	text-align: center;
-	color: #e91c1c; /* <-------- NEED TO ADJUST COLOR HERE red heading*/
+	color: rgb(46, 34, 19); /* <-------- NEED TO ADJUST COLOR HERE red heading*/
 	text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
 }
 
@@ -41,7 +41,7 @@ h1::after { /* this is the underline */
 	content: " ";
 	height: 2px;
 	width: 150px;
-	background: #e91c1c; /* <-------- NEED TO ADJUST COLOR HERE red heading*/
+	background: rgb(46, 34, 19); /* <-------- NEED TO ADJUST COLOR HERE red heading*/
 	margin: 5px auto 40px;
 	box-shadow: 5px 2px 3px rgba(0, 0, 0, 0.5);
 }
@@ -157,7 +157,7 @@ section {
 .head-main {
 	text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.9);
 	font-variant: small-caps;
-	color: #fff;
+	color: rgba(166, 123,91, 1);
 	letter-spacing: 5pt;
 	word-spacing: 21pt;
 	font-size: 4.5em;
@@ -168,6 +168,7 @@ section {
 	border: 3px double #fff;
 	border-radius: 15px;
 	padding: 15px;
+	background-color: rgba(236, 236,236, 0.7);
 }
 
 /* no class
@@ -251,7 +252,7 @@ section {
 	border: 1px solid #808080;
 	margin: 2% auto;
 	border-radius: 7px;
-	background: rgb(277, 222, 222);  /*<-------- NEED TO ADJUST COLOR HERE pink background contact*/
+	background: rgb(230, 212, 203);  /*<-------- NEED TO ADJUST COLOR HERE pink background contact*/
 	box-shadow: 2px 3px 3px 0px rgba(0, 0, 0, 0.3);
 	font-family: "Raleway", sans-serif;
 }
