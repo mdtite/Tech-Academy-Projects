@@ -2,7 +2,7 @@
 This is a display of sample websites that I made using HTML and CSS.
 
 ## Projects
-• [Personal Website](https://mdtite.github.io/personal_website)  
+• [Personal Website](https://mdtite.github.io/personal_website_updated/)  
 • [Visit Japan Website](https://mdtite.github.io/Japan_Website/)  
 • [Movie Theater Website](https://mdtite.github.io/bootstrap4_project)  
 
