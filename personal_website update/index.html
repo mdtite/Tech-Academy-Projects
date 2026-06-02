@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width" />
+        <title>MDT Portfolio</title>
+        <link rel="stylesheet" type="text/css" href="stylesheet/portfolio.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_io/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon_io/favicon-16x16.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    </head>
+
+    <body class="Background">
+        
+        <div class="Navbar">
+            <a class="active" href="#Home">Home</a>
+            <a href="#Slides">Slides</a>
+            <a href="#About">About</a>
+        </div>
+
+        <br>
+        <br>
+
+        <div id="Home">
+            <video autoplay muted loop playsinline id="Typing_Video">
+                <source src="images/video/Typing.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+
+        <div class="Video_Text">
+            <h1 class="white-text main_title">Marius Dan Tite Portfolio</h1>
+            <p class="center zoom">
+                <br> Welcome to my portfolio website. Here, I will tell you about my background, experience and projects.
+                <br>
+                <br> Thank you for stopping by and enjoy! 
+            </p>
+        </div>
+
+        <div id="Slides" class="slideshow-container">
+            <div class="mySlides">
+                <img src="images/fulls.jpg" alt="Project Image 1">
+                <div class="text">Full-Stack Development</div>
+            </div>
+
+            <div class="mySlides">
+                <img src="images/githb.png" alt="Project Image 2">
+                <div class="text">Projects on GitHub Repositories</div>
+            </div>
+
+            <div class="mySlides">
+                <img src="images/clean.png" alt="Project Image 3">
+                <div class="text">Clean and Responsive code</div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        
+        <div class="dot-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+
+        <div class="Row" id="About">
+            <div class="Column_2">
+                <a href="https://www.instagram.com/mariusdant" target="_blank"><img src="images/img1.jpg" alt="Picture of Marius"></a>
+            </div>
+            <div class="Column_1">
+                <h1>About</h1>
+                <p>
+                    I'm a passionate web developer with a focus on clean, responsive design and efficient, modern code.
+                    <br>
+                    <br>I am a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s Software Developer Boot Camp. I am trained and experienced in the following web and programming languages: HTML, CSS, JavaScript, SQL and more. 
+                    <br>
+                    <br>I am a full-stack developer and would love to work with you on your project. <a href="#Contact">Contact</a> me below!
+                </p>
+            </div>
+        </div>
+
+        <div class="Row" id="GitHub">
+            <div class="Column_1">
+                <h1>GitHub</h1>
+                <p>Welcome to my portfolio — a collection of personal projects showcasing my work in web development. Explore what I’ve built, and what I’m currently working on:
+                    <br>
+                    <br>
+                    <br>
+                    <p class="center"><a href="https://mdtite.github.io/Japan_Website/" target="_blank">1. Visit Japan Website</a></p>
+                    <p class="center"><a href="https://mdtite.github.io/bootstrap4_project/" target="_blank">2. Movie Theater Website</a></p>
+                </p>
+            </div>
+            <div class="Column_2">
+                <a href="https://github.com/mdtite/" target="_blank"><img src="images/GitHub.jpg" alt="GitHub Logo"></a>
+            </div>
+        </div>
+
+
+        <button class="Pop_Up_Button" onclick="openForm()">Contact</button>
+
+        <div class="form-popup" id="myForm">
+            <form action="https://formspree.io/f/xpwrbewl" method="POST" class="form-container">
+                <h1>Contact Me</h1>
+                
+                <label><b>Name</b></label>
+                <input type="text" placeholder="Enter Your Name" required>
+
+                <label><b>Email</b></label>
+                <input type="text" id="PopEmail" name="Email" placeholder="Enter Email" required>
+
+                <label><b>Message</b></label>
+                <input type="text" id="PopMessage" name="Message" placeholder="Your Message" required>
+
+                <button type="submit" class="btn">SUBMIT</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
+            </form>
+        </div>
+
+        <footer>
+            <p>
+                <p class="f_center">&copy 2026 Marius Dan Tite</p>
+            </p>
+        </footer>
+
+        <script src="js/portfolio.js"></script>
+    </body>
+</html>
